@@ -6,8 +6,7 @@ class node:
             self.level = 0
         else :
             self.level = self.parent.level + 1
-
-@staticmethod
+            
 def getlca(a, b):
     if a.parent != None and b.parent != None:
          if a.parent.data == b.parent.data:
