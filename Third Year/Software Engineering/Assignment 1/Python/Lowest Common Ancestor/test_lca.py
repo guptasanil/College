@@ -14,9 +14,9 @@ class Testlca(unittest.TestCase):
         t = lca.node('T', e)
         d = lca.node('D', i)
         self.assertEqual('A', lca.getlca(h, t))
-        self.assertEqual('F', lca.getlca(h, t))
-        self.assertEqual('F', lca.getlca(h, t))
-        self.assertEqual('E', lca.getlca(h, t))
-        self.assertEqual('none', lca.getlca(h, t))
+        self.assertEqual('F', lca.getlca(b, d))
+        self.assertEqual('F', lca.getlca(b, i))
+        self.assertEqual('E', lca.getlca(b, t))
+        self.assertEqual('none', lca.getlca(f, a))
     
     
